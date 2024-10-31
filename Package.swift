@@ -24,7 +24,8 @@ let package = Package(
             name: "YandexMapsFixed",
             dependencies: ["YandexMapsMobile"],
             linkerSettings: [
-                .unsafeFlags(["-ObjC"])
+                .unsafeFlags(["-ObjC"]),
+                .linkedFramework("DeviceCheck")
             ]
         )
     ]
